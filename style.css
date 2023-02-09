@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+body {
+    background-image: url('https://images.pexels.com/photos/9002742/pexels-photo-9002742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px 50px 0px;
+    overflow: hidden;
+}
+
+#gameInitialize {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+}
+
+#gameInitialize label {
+    background-color: #23232388;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#gameInitialize input[type="text"] {
+    width: 100%;
+    height: 25px;
+    font-size: 1.5em;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 3px;
+    border: unset;
+}
+
+#gameInitialize input[type="text"]::placeholder {
+    position: absolute;
+    bottom: 0;
+}
+
+#gameInitialize input[type="text"]:focus {
+    outline: none;
+    color: white;
+    border-bottom: 3px solid #ddd;
+    background-color: transparent;
+    transition: .3s;
+}
+
+#gameInitialize input[type="button"] {
+    height: 35px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.715);
+}
+
+#gameInitialize input[type="button"]:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.762);
+    border-color: transparent;
+    background-color: #C0ACF0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.311);
+    transition: .4s;
+}
+
+h2 {
+    font-size: 2em;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.753);
+
+}
+
+#gameBoard {
+    max-width: 19rem;
+    background-color: #AD9BEF;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-rows: 6rem 6rem 6rem;
+    gap: .5rem;
+    padding: .5rem;
+    margin-bottom: 10rem;
+}
+
+#gameBoard span {
+    color: #CE617F;
+    background-color: #ddd;
+    display: grid;
+    place-content: center;
+    font-size: 5rem;
+}
+
+#gameBoard span.win {
+    background-color: #25a340;
+    color: #ddd;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.745);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
